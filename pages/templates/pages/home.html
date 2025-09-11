@@ -1,0 +1,122 @@
+{% extends "pages/base.html" %}
+{% load static %}
+
+{% block content %}
+
+<!-- Hero Section -->
+<section class="hero">
+  <div class="hero-content">
+    <h1>Welcome to <span>Uma Tradelink</span></h1>
+    <p> At Uma Tradelink, we specialize in delivering high-quality chemicals and reliable sourcing solutions.  
+  Our mission is to build trust through innovation, efficiency, and long-term partnerships.</p>
+  </div>
+</section>
+
+<!-- About Preview -->
+<section class="about-preview section-padding">
+  <div class="container">
+    <h2 class="section-title">Who We Are</h2>
+    <p class="section-subtitle">
+      Uma Tradelink is more than a supplier — we are your strategic growth partner.
+Our expertise ensures top-quality chemicals, efficient logistics, and reliable sourcing.
+Sustainability and innovation drive every solution we provide to our clients.
+With Uma Tradelink, your success becomes our shared mission.
+    </p>
+    <a href="{% url 'who_we_are' %}" class="btn-secondary">Read More</a>
+  </div>
+</section>
+
+<!-- Services Section -->
+<section class="services section-padding">
+  <div class="container">
+    <h2 class="section-title">Our Services</h2>
+    <div class="service-grid">
+      <div class="service-card">
+        <img src="{% static 'images/global-search.png' %}" alt="Sales & Marketing">
+        <h3>One-stop Sourcing & Quality Assurance</h3>
+        <p>We provide complete one-stop sourcing solutions with strict quality assurance at every step. Ensuring
+          reliability, efficiency, and excellence in every product delivered.</p>
+      </div>
+      <div class="service-card">
+        <img src="{% static 'images/supply-chain-management.png' %}" alt="Cargo Consolidation">
+        <h3>Comprehensive Supply Chain Solution</h3>
+        <p>From procurement to delivery, we offer end-to-end supply chain solutions tailored to your business needs.
+          Ensuring efficiency, transparency, and reliability at every stage</p>
+      </div>
+      <div class="service-card">
+        <img src="{% static 'images/transaction.png' %}" alt="Logistics">
+        <h3>Technology Driven Transactions</h3>
+        <p>Leveraging advanced technology to make every transaction smarter, faster, and more secure. Enhancing
+          efficiency with transparency you can trust.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- inductries Section -->
+<section class="services section-padding">
+  <div class="container">
+    <h2 class="section-title">Industries Served</h2>
+    <div class="service-grid">
+      <div class="service-card">
+        <img src="{% static 'images/agro-chemicals.png' %}" alt="Sales & Marketing">
+        <h3>AGRO CHEMICALS</h3>
+      </div>
+      <div class="service-card">
+        <img src="{% static 'images/cosmetics (1).png' %}" alt="Cargo Consolidation">
+        <h3>COSMETICS</h3>
+      </div>
+      <div class="service-card">
+        <img src="{% static 'images/dye-intermediates.png' %}" alt="Logistics">
+        <h3>DYE INTERMEDIATES</h3>
+      </div>
+      <div class="service-card">
+        <img src="{% static 'images/aroma-chemicals.png' %}" alt="Sourcing">
+        <h3>AROMA CHEMICALS</h3>
+      </div>
+      <div class="service-card">
+        <img src="{% static 'images/glass-industries.png' %}" alt="Sales & Marketing">
+        <h3>GLASS INDUSTRIES</h3>
+      </div>
+      <div class="service-card">
+        <img src="{% static 'images/oil-gas.png' %}" alt="Cargo Consolidation">
+        <h3>OIL & GAS</h3>
+      </div>
+      <div class="service-card">
+        <img src="{% static 'images/pharmaceuticals.png' %}" alt="Logistics">
+        <h3>PHARMACEUTICALS</h3>
+      </div>
+      <div class="service-card">
+        <img src="{% static 'images/steel-industries.png' %}" alt="Sourcing">
+        <h3>STEEL INDUSTRIES</h3>
+      </div>
+      <div class="service-card">
+        <img src="{% static 'images/automobile.png' %}" alt="Sales & Marketing">
+        <h3>AUTOMOBILE</h3>
+      </div>
+      <div class="service-card">
+        <img src="{% static 'images/abrasives.png' %}" alt="Cargo Consolidation">
+        <h3>ABRASIVES</h3>
+      </div>
+      <div class="service-card">
+        <img src="{% static 'images/polymer-processing.png' %}" alt="Logistics">
+        <h3>POLYMER PROCESSING</h3>
+      </div>
+      <div class="service-card">
+        <img src="{% static 'images/fince-chemicals.png' %}" alt="Sourcing">
+        <h3>FINE CHEMICALS</h3>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Call To Action -->
+<section class="cta">
+  <div class="container">
+    <h2>Let’s Work Together</h2>
+    <p>Partner with us for innovative chemical solutions and sustainable growth.</p>
+    <a href="{% url 'contact' %}" class="btn-primary">Get in Touch</a>
+  </div>
+</section>
+
+{% endblock %}

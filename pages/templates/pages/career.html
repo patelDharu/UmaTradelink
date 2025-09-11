@@ -1,0 +1,39 @@
+{% extends "pages/base.html" %}
+{% load static %}
+{% block content %}
+
+<!-- Hero Section -->
+<section class="carrerhero">
+    <div class="carrerhero-overlay"></div>
+    <div class="carrerhero-content">
+        <h1>Career</h1>
+        <p><a href="{% url 'home' %}">Home</a> › Career</p>
+    </div>
+</section>
+
+<!-- Intro Section -->
+<section class="career-intro">
+    <div class="container">
+        <h2>Build Your Future With Us</h2>
+        <p>
+            We believe in empowering individuals to grow, innovate, and make an impact.
+            Join our team to work in a collaborative, challenging, and rewarding environment
+            where your skills truly matter.
+        </p>
+        <!-- <img src="{% static 'images/career-team.jpg' %}" alt="Career Opportunities" class="career-img"> -->
+    </div>
+</section>
+
+<!-- Call to Action -->
+<section class="career-cta">
+    <div class="container">
+        <h2>Let’s Grow Together</h2>
+        <p>We’re always excited to connect with talented people. Mail us!</p>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=umatradelink@gmail.com" target="_blank"
+            class="btn-career">
+            Mail Us
+        </a>
+    </div>
+</section>
+
+{% endblock %}

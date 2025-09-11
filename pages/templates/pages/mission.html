@@ -1,0 +1,83 @@
+{% extends "pages/base.html" %}
+{% load static %}
+
+{% block content %}
+
+<!-- Hero Section -->
+<section class="missionhero">
+    <div class="overlay"></div>
+    <div class="missionhero-content">
+        <h1>Mission / Vision & Values</h1>
+        <p><a href="{% url 'home' %}">Home</a> › Mission / Vision & Values</p>
+    </div>
+</section>
+
+<!-- Mission & Vision Section -->
+<section class="missionvision section-padding">
+    <div class="container grid-2">
+        <div class="card">
+            <img src="{% static 'images/vision.png' %}" alt="Mission Icon">
+            <h2>VISION</h2>
+            <p>
+                Our Vision focuses our attention on the future of our company – what we want to be. We can only realize
+                our vision by walking side-by-side with our clients and our partners as they strive to turn their own
+                unique visions and ideas into reality. Our Vision is about reaching our full potential as a partner to
+                all those we work with. It paints a picture of our future together.
+            </p>
+        </div>
+        <div class="card">
+            <img src="{% static 'images/target.png' %}" alt="Vision Icon">
+            <h2>MISSION</h2>
+            <p>
+                Our mission is to deliver optimal solutions with quality and services at reasonable prices. For us,
+                customer satisfaction is the most important thing. We are very friendly in our dealings with the
+                customers and it helps us retain existing clients and expand our reach.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Values Section -->
+<section class="values section-padding">
+    <div class="container">
+        <h2 class="section-title">Values</h2>
+        <div class="grid-3">
+            <div class="value-card">
+                <h3>PIONEERING</h3>
+                <p>
+                    We will be bold and vigorous, never afraid to take on challenges, using customer insights to always
+                    stay ahead and develop innovative solutions.</p>
+            </div>
+            <div class="value-card">
+                <h3>UNITY</h3>
+                <p>
+                    We believe that for an organisation to grow, it is very important for all the stakeholders to be
+                    happy. We will invest in all our people and partners equally, enable continuous learning and build
+                    relationships based on mutual respect that last a lifetime.</p>
+            </div>
+            <div class="value-card">
+                <h3>EXCELLENCE</h3>
+                <p>We will be committed to always achieve the highest quality standards and facilitate everything within
+                    our reach to ensure the same.</p>
+            </div>
+            <div class="value-card">
+                <h3>RESPONSIBILITY</h3>
+                <p>We will integrate environmental and social principles ensuring that we always utilize all our
+                    resources well and never be involved in wasting resources or harming the environment in any way.</p>
+            </div>
+            <div class="value-card">
+                <h3>INTEGRITY</h3>
+                <p>We will always be honest, transparent and ethical in all our operations; everything we do must always
+                    be in the right spirit.</p>
+            </div>
+            <div class="value-card">
+                <h3>SAFETY</h3>
+                <p>Safety is a core value over which no business objective can ever have a higher priority. We will
+                    always be committed to taking perfect care and all the necessary measures to ensure the safety of
+                    all our employees.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

@@ -1,0 +1,57 @@
+{% extends "pages/base.html" %}
+{% load static %}
+
+{% block content %}
+<section class="csrhero">
+    <div class="csrhero-content">
+        <h1>CSR</h1>
+        <p><a href="{% url 'home' %}">Home</a> › CSR</p>
+    </div>
+</section>
+
+<section class="csr-section">
+    <div class="container">
+        <h2>Corporate Social Responsibility</h2>
+        <p>
+            Uma Tradelink is dedicated to creating positive, sustainable change in the communities we serve.
+            We treat corporate social responsibility as a long-term commitment — empowering people through
+            skills training, livelihood support, and environment-friendly initiatives that deliver real impact.
+        </p>
+
+        <div class="csr-grid">
+            <div class="csr-card">
+                <img src="{% static 'images/employment (1).jpg' %}" alt="Local Employment">
+                <h3>Local Employment</h3>
+                <p>Uma Tradelink strongly believes in empowering local communities by creating employment opportunities.
+                    We encourage local talent to apply for open positions and also provide traineeships and internships
+                    to students and fresh graduates, helping them gain valuable industry experience.</p>
+            </div>
+
+            <div class="csr-card">
+                <img src="{% static 'images/Upgrading (1).jpg' %}" alt="Upgrading Skills">
+                <h3>Upgrading Skills</h3>
+                <p>Our employees are our biggest strength. At Uma Tradelink, we actively promote skill development and
+                    continuous learning through both internal and external training programs. We also support employees
+                    who pursue executive education courses, ensuring their personal and professional growth.</p>
+            </div>
+
+            <div class="csr-card">
+                <img src="{% static 'images/environment.jpg' %}" alt="Environment">
+                <h3>Environment</h3>
+                <p>We are sincerely committed to the protection of the environment. Strict measures are taken to ensure
+                    that our operations do not harm nature in any way. We also promote sustainable practices, including
+                    safe handling of chemicals, resource efficiency, and eco-friendly initiatives.</p>
+            </div>
+
+            <div class="csr-card">
+                <img src="{% static 'images/safety.jpg' %}" alt="Safety">
+                <h3>Safety</h3>
+                <p>Safety is at the core of Uma Tradelink’s values. From handling hazardous materials responsibly to
+                    ensuring workplace safety for our employees, we follow stringent safety standards. Our CSR focus
+                    extends beyond business to create positive and sustainable change, empowering communities and
+                    safeguarding future generations.</p>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

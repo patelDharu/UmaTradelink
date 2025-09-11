@@ -1,0 +1,41 @@
+{% extends "pages/base.html" %}
+{% load static %}
+
+{% block content %}
+
+<!-- Hero Section -->
+<section class="whero">
+    <div class="whero-content">
+        <h1>Who We Are</h1>
+        <p><a href="{% url 'home' %}">Home</a> › Who We Are</p>
+    </div>
+</section>
+
+<!-- Main Content Section -->
+<section class="who-we-are section-padding">
+    <div class="container">
+        <div class="content-row">
+            <div class="content-image">
+                <img src="{% static 'images/agro-chemical.jpg' %}" alt="Chemicals Lab">
+            </div>
+            <div class="content-text">
+                <h2>Welcome To Uma Tradelink</h2>
+                <p>Our story began in 2020 in Lathidad, Botad, Gujarat, with a small yet determined setup that became
+                    the foundation of our business operations. From these humble beginnings, Uma Tradelink has grown
+                    into a trusted name in the industry, building strong relationships and expanding our presence across
+                    India and beyond. </p>
+<p>
+                    We specialize in basic chemicals, acids, bulk pharma intermediates, and dye intermediates, and
+                    proudly serve as authorised distributors for leading chemical brands. With modern infrastructure and
+                    all required licenses, we ensure safe handling and storage of hazardous and sensitive chemicals.
+</p>
+<p>                    To support our operations, we have a fleet of dedicated carriers and delivery vans, ensuring
+                    efficient and timely distribution to businesses across regions. At Uma Tradelink, delivering
+                    quality, safety, and trust is at the heart of all our activities — a commitment reflected in both
+                    our business practices and our social responsibility initiatives.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

@@ -1,0 +1,63 @@
+{% extends "pages/base.html" %}
+{% load static %}
+{% block content %}
+
+<!-- Hero Section -->
+<section class="logisticshero">
+    <div class="logisticshero-overlay"></div>
+    <div class="logisticshero-content">
+        <h1>Technology Driven Transactions</h1>
+        <p><a href="{% url 'home' %}">Home</a> › Technology Driven Transactions</p>
+    </div>
+</section>
+
+<!-- Split Sections -->
+<section class="tech-split">
+    <div class="container split">
+        <div class="split-image animate-left">
+            <img src="{% static 'images/shopping-bag.png' %}" alt="Online Orders">
+        </div>
+        <div class="split-content">
+            <h2>Seamless Online Orders</h2>
+            <p>Place and manage your orders digitally with instant confirmations and real-time updates. Say goodbye to paperwork delays.</p>
+        </div>
+    </div>
+</section>
+
+<section class="tech-split">
+    <div class="container split reverse">
+        <div class="split-content">
+            <h2>Real-Time Tracking</h2>
+            <p>Monitor shipments at every stage with complete visibility and transparency, ensuring peace of mind and accuracy.</p>
+        </div>
+        <div class="split-image animate-right">
+            <img src="{% static 'images/real-time-monitoring.png' %}" alt="Tracking System">
+        </div>
+    </div>
+</section>
+
+<section class="tech-split">
+    <div class="container split">
+        <div class="split-image animate-left">
+            <img src="{% static 'images/evaluation.png' %}" alt="Reports & Analytics">
+        </div>
+        <div class="split-content">
+            <h2>Automated Reports & Analytics</h2>
+            <p>Download invoices, certifications, and analytical reports instantly. Our ERP platform ensures everything is one click away.</p>
+        </div>
+    </div>
+</section>
+
+<section class="tech-split">
+    <div class="container split reverse">
+        <div class="split-content">
+            <h2>Customer Feedback Digitized</h2>
+            <p>Interact with sales representatives, share feedback, and receive support directly through our digital platform.</p>
+        </div>
+        <div class="split-image animate-right">
+            <img src="{% static 'images/feedback.png' %}" alt="Customer Feedback">
+        </div>
+    </div>
+</section>
+
+{% endblock %}

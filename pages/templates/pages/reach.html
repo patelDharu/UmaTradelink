@@ -1,0 +1,48 @@
+{% extends "pages/base.html" %}
+{% load static %}
+
+{% block content %}
+<section class="supplier-hero">
+    <div class="supplier-hero-content">
+        <h1>Supplier</h1>
+        <p><a href="{% url 'home' %}">Home</a> › Supplier</p>
+    </div>
+</section>
+
+<section class="supplier-logos-section">
+    <div class="supplier-logos-container">
+        <p>
+            At Uma Tradelink, one of our greatest strengths lies in our strategically located warehouses, enabling us to
+            serve clients with unmatched efficiency and reliability. This advantage allows us to act as a trusted
+            distribution partner for some of the most respected names in the chemical industry.
+        </p>
+
+        <div class="supplier-logos-grid">
+            <div class="supplier-logo-card">
+                <img src="{% static 'images/stupidDOPE-Logo-2024.png' %}" alt="Agro Chemicals">
+            </div>
+            <div class="supplier-logo-card">
+                <img src="{% static 'images/GACL-site-logo.png' %}" alt="Cosmetics">
+            </div>
+            <div class="supplier-logo-card">
+                <img src="{% static 'images/logo.png' %}" alt="Dye Intermediates">
+            </div>
+            <div class="supplier-logo-card">
+                <img src="{% static 'images/Nirma_logo.png' %}" alt="Aroma Chemicals">
+            </div>
+            <div class="supplier-logo-card">
+                <img src="{% static 'images/new-kcil-logo.png' %}" alt="Glass Industries">
+            </div>
+            <div class="supplier-logo-card">
+                <img src="{% static 'images/logo.jpeg' %}" alt="Oil & Gas">
+            </div>
+            <div class="supplier-logo-card">
+                <img src="{% static 'images/SRF-logo.png' %}" alt="Pharmaceuticals">
+            </div>
+            <div class="supplier-logo-card">
+                <img src="{% static 'images/logo.jpg' %}" alt="Steel Industries">
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

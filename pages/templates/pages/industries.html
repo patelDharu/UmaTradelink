@@ -1,0 +1,72 @@
+{% extends "pages/base.html" %}
+{% load static %}
+
+{% block content %}
+<section class="industryhero">
+    <div class="industryhero-content">
+        <h1>Industries</h1>
+        <p><a href="{% url 'home' %}">Home</a> › Industries</p>
+    </div>
+</section>
+
+<section class="industries-section">
+  <div class="industries-container">
+    <p>
+      Since our inception in 2020, Uma Tradelink has distinguished itself by serving a diverse range of clients across multiple industries. Our approach goes beyond simply supplying chemicals — we ensure consistent quality, timely deliveries, and proactive follow-ups to meet every client’s needs.
+
+Over time, our customers have become an extended part of the Uma Tradelink family, relying on us not only for our extensive distribution network but also for our integrity, reliability, and commitment.
+    </p>
+
+    <div class="industries-grid">
+      <div class="industries-card">
+        <img src="{% static 'images/agro-chemical.jpg' %}" alt="Agro Chemicals">
+        <h3>Agro Chemicals</h3>
+      </div>
+      <div class="industries-card">
+        <img src="{% static 'images/cosmetic.jpg' %}" alt="Cosmetics">
+        <h3>Cosmetics</h3>
+      </div>
+      <div class="industries-card">
+        <img src="{% static 'images/dye-intermediates.jpg' %}" alt="Dye Intermediates">
+        <h3>Dye Intermediates</h3>
+      </div>
+      <div class="industries-card">
+        <img src="{% static 'images/aroma-chemicals.jpg' %}" alt="Aroma Chemicals">
+        <h3>Aroma Chemicals</h3>
+      </div>
+      <div class="industries-card">
+        <img src="{% static 'images/glass-industries.jpg' %}" alt="Glass Industries">
+        <h3>Glass Industries</h3>
+      </div>
+      <div class="industries-card">
+        <img src="{% static 'images/oil-gas.jpg' %}" alt="Oil & Gas">
+        <h3>Oil & Gas</h3>
+      </div>
+      <div class="industries-card">
+        <img src="{% static 'images/pharmaceuticals.jpg' %}" alt="Pharmaceuticals">
+        <h3>Pharmaceuticals</h3>
+      </div>
+      <div class="industries-card">
+        <img src="{% static 'images/steel-industries.jpg' %}" alt="Steel Industries">
+        <h3>Steel Industries</h3>
+      </div>
+      <div class="industries-card">
+        <img src="{% static 'images/automobile.jpg' %}" alt="Automobile">
+        <h3>Automobile</h3>
+      </div>
+      <div class="industries-card">
+        <img src="{% static 'images/abrasives.jpg' %}" alt="Abrasives">
+        <h3>Abrasives</h3>
+      </div>
+      <div class="industries-card">
+        <img src="{% static 'images/polymer-processing.jpg' %}" alt="Polymer Processing">
+        <h3>Polymer Processing</h3>
+      </div>
+      <div class="industries-card">
+        <img src="{% static 'images/fine-chemicals.jpg' %}" alt="Fine Chemicals">
+        <h3>Fine Chemicals</h3>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

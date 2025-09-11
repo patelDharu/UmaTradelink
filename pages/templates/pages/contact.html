@@ -1,0 +1,81 @@
+{% extends "pages/base.html" %}
+{% load static %}
+{% block content %}
+<section class="contacthero">
+    <div class="contacthero-content">
+        <h1>Contact</h1>
+        <p><a href="{% url 'home' %}">Home</a> › Contact</p>
+    </div>
+</section>
+
+
+
+<section class="contact-section">
+  <div class="container">
+    <h5>Send Message</h5>
+    <h2>Drop us message for any query</h2>
+    <p>If you have an idea, we would love to hear about it.</p>
+
+    <div class="contact-grid">
+      <!-- Contact Form -->
+      <form id="whatsappForm" onsubmit="sendToWhatsApp(event)">
+        <div class="form-row">
+          <input type="text" id="name" placeholder="Name" required>
+          <input type="email" id="email" placeholder="Email" required>
+        </div>
+        <div class="form-row">
+          <input type="text" id="phone" placeholder="Phone" required>
+        </div>
+        <textarea id="message" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn-primary">SEND MESSAGE</button>
+      </form>
+
+      <!-- Contact Info -->
+      <div class="contact-info">
+        <div class="info-box">
+          <img src="{% static 'images/maps-and-flags.png' %}" alt="Address">
+          <div>
+            <h4>Address</h4>
+            <p>Ground Floor, No.19, Nana Godown, APMC, Bhavnagar Road, Lathidad, Botad - 364710</p>
+          </div>
+        </div>
+        <div class="info-box">
+          <img src="{% static 'images/email.png' %}" alt="Email">
+          <div>
+            <h4>Email</h4>
+            <p>umatradelink009@gmail.com</p>
+          </div>
+        </div>
+        <div class="info-box">
+          <img src="{% static 'images/phone-call.png' %}" alt="Phone">
+          <div>
+            <h4>Phone</h4>
+            <p>+91 99099 77908</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+function sendToWhatsApp(event) {
+    event.preventDefault();
+    let name = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
+    let phone = document.getElementById("phone").value;
+    let message = document.getElementById("message").value;
+
+    let whatsappNumber = "919909977908"; // <-- Replace with your WhatsApp number (with country code, no +)
+    let url = "https://wa.me/" + whatsappNumber + "?text="
+        + "*New Query from Website*%0A"
+        + "👤 Name: " + name + "%0A"
+        + "📧 Email: " + email + "%0A"
+        + "📞 Phone: " + phone + "%0A"
+        + "💬 Message: " + message;
+
+    window.open(url, "_blank").focus();
+}
+</script>
+
+{% endblock %}

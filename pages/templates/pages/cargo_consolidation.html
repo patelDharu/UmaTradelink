@@ -1,0 +1,60 @@
+{% extends "pages/base.html" %}
+{% load static %}
+{% block content %}
+
+<!-- Hero Section -->
+<section class="cargohero">
+    <div class="cargohero-content">
+        <h1>Comprehensive Supply Chain Solution</h1>
+        <p><a href="{% url 'home' %}">Home</a> › Comprehensive Supply Chain Solution</p>
+    </div>
+</section>
+
+<!-- Intro Section -->
+<section class="cscs-intro">
+    <div class="container">
+        <h2>End-to-End Supply Chain Excellence</h2>
+        <p>
+            We deliver seamless supply chain solutions that cover everything from procurement
+            and warehousing to logistics and on-time delivery. Our goal is to help businesses
+            reduce costs, improve efficiency, and achieve reliability at every stage.
+        </p>
+        <img src="{% static 'images/global-shipping.png' %}" alt="Supply Chain Process" class="intro-img">
+    </div>
+</section>
+
+<!-- Key Benefits -->
+<section class="cscs-benefits">
+    <div class="container">
+        <h2>Key Benefits</h2>
+        <div class="benefits-grid">
+            <div class="benefit">
+                <img src="{% static 'images/salary.png' %}" alt="Cost Savings">
+                <h3>Cost Savings</h3>
+                <p>Reduced transportation and warehousing costs.</p>
+            </div>
+            <div class="benefit">
+                <img src="{% static 'images/clock.png' %}" alt="Efficiency">
+                <h3>Efficiency</h3>
+                <p>Improved operational efficiency and transparency.</p>
+            </div>
+            <div class="benefit">
+                <img src="{% static 'images/logistic.png' %}" alt="Logistics">
+                <h3>Smart Logistics</h3>
+                <p>Customized logistics and distribution networks.</p>
+            </div>
+            <div class="benefit">
+                <img src="{% static 'images/monitor.png' %}" alt="Technology Driven">
+                <h3>Technology Driven</h3>
+                <p>Processes powered by automation and accuracy.</p>
+            </div>
+            <div class="benefit">
+                <img src="{% static 'images/follow-up.png' %}" alt="Tracking">
+                <h3>End-to-End Tracking</h3>
+                <p>Real-time tracking, monitoring, and reporting.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
